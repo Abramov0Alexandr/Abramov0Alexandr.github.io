@@ -1,0 +1,139 @@
+/* styles/main.css */
+
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #f2f2f2;
+    --accent-color: #00d1b2;
+    --font-main: 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.header {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.description {
+    max-width: 600px;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 2rem;
+    border: 2px solid var(--accent-color);
+}
+
+.section {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+}
+
+.timeline-period {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.project-card:hover {
+    background-color: #222222;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.tech {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+}

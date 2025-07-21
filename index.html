@@ -1,10 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Абрамов Александр | Python Backend Developer</title>
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
+<header class="header">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#experience">Опыт</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Абрамов Александр</h1>
+            <p class="subtitle">Python Backend Developer</p>
+            <p class="description">Создаю масштабируемые, надёжные и безопасные backend-сервисы. Увлекаюсь микросервисами, асинхронностью и современными практиками разработки.</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/profile.jpg" alt="Фото Александра Абрамова" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>Обо мне</h2>
+        <p>Я Python-разработчик с опытом создания масштабируемых, надёжных и безопасных backend-сервисов. Специализируюсь на построении микросервисных архитектур, REST API и асинхронной обработке данных. Слежу за трендами в разработке, активно применяю современные практики и подходы. Люблю быть в гуще событий и участвовать в интересных проектах.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <h2>Опыт</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-period">01.2024 – 05.2024</div>
+                <h3>Python-разработчик</h3>
+                <p><strong>Compas Pro</strong></p>
+                <ul>
+                    <li>Разработка backend-части новых сервисов и поддержка существующих</li>
+                    <li>Сбор данных с помощью веб-скриптов</li>
+                    <li>Интеграция с AI-моделями</li>
+                </ul>
+                <p class="tech">FastAPI, DRF, Apache Airflow, Celery, SQLAlchemy, Docker</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-period">06.2024 – настоящее время</div>
+                <h3>Backend-разработчик</h3>
+                <p><strong>АО "Технадзор"</strong></p>
+                <ul>
+                    <li>Разработка и поддержка сервисов на FastAPI</li>
+                    <li>Интеграция с RabbitMQ, Redis, MySQL, PostgreSQL</li>
+                    <li>Тестирование и оптимизация производительности</li>
+                </ul>
+                <p class="tech">FastAPI, Docker, RabbitMQ, PostgreSQL, Redis, Flower</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2>Проекты</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Geoservice</h3>
+                <p>Сервис проверки земельных участков на юридические ограничения и вхождение в ЗОУИТ с использованием API Росреестра.</p>
+                <p class="tech">FastAPI, Pydantic, SQLAlchemy, Shapely, Rosreestr2coord</p>
+                <a href="https://github.com/Abramov0Alexandr/geoservice " target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Конструктор кухонь</h3>
+                <p>Многофункциональный сервис для проектирования кухонь "под ключ" с визуализацией и расчетом стоимости.</p>
+                <p class="tech">FastAPI, SQLAlchemy, Aio-pika, Boto3, Blender API</p>
+                <a href="https://github.com/Abramov0Alexandr/kitchen-designer " target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>FastAPI-asyncpg-sqlalchemy</h3>
+                <p>Пример интеграции Pydantic 2.0 с SQLAlchemy ORM через asyncpg. Асинхронная обработка данных, кэширование и JWT-аутентификация.</p>
+                <p class="tech">FastAPI, SQLAlchemy, asyncpg, Pydantic, Redis</p>
+                <a href="https://github.com/Abramov0Alexandr/fastapi-asyncpg-sqlalchemy " target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Electronics Retail Chain API</h3>
+                <p>API для иерархической цепи поставок с поддержкой регистрации, авторизации, фильтрации и пагинации.</p>
+                <p class="tech">Django, DRF, SimpleJWT, PostgreSQL, Django-Filter</p>
+                <a href="https://github.com/Abramov0Alexandr/retail-chain-api " target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Healthy Habits Tracker</h3>
+                <p>Backend для отслеживания полезных привычек с Telegram-ботом и системой напоминаний.</p>
+                <p class="tech">Django, DRF, Celery, Redis, Telegram Bot</p>
+                <a href="https://github.com/Abramov0Alexandr/healthy-habits-tracker " target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь со мной:</p>
+        <ul>
+            <li>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>🐱 GitHub: <a href="https://github.com/Abramov0Alexandr " target="_blank">Abramov0Alexandr</a></li>
+            <li>📄 <a href="assets/resume.pdf" download>Скачать резюме</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2025 Абрамов Александр</p>
+</footer>
+
+<script src="scripts/main.js"></script>
 </body>
 </html>
